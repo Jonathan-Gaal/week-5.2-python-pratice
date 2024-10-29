@@ -23,10 +23,18 @@ def calculate_budget_summary(df, monthly_budget=5000):
 
 
 
-def create_pie_chart(df, budget_summary):
-    expense_category_percentages = budget_summary["monthly_expenses_grouped_and_summed_by_category"]
+def create_pie_chart(monthly_budget, df, budget_summary):
+    # Get the monthly expenses grouped by category
+    monthly_expenses = abs(budget_summary["monthly_expenses_grouped_and_summed_by_category"])
     
-    print(expense_category_percentages)
+    # Calculate the percentage of each expense relative to the total budget
+    expense_category_percentages = round((monthly_expenses / monthly_budget) * 100)
+
+    # Update the pie chart to show percentages as values and category names as labels
+    plt.pie(expense_category_percentages, labels=monthly_expenses.index, autopct='%1.1f%%')  # Use index for labels
+    plt.savefig('pie_chart.png')
+    plt.show()
+
 
 
 
@@ -39,7 +47,7 @@ def calculate_budget_expenses():
 
     monthly_budget_summary = calculate_budget_summary(df, monthly_budget)
 
-    print(create_pie_chart(df, monthly_budget_summary ))
+    print(create_pie_chart(monthly_budget, df, monthly_budget_summary ))
 
 
 
