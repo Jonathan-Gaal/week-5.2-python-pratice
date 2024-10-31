@@ -1,0 +1,43 @@
+
+    Monthly Budget Analysis Report 
+
+    Reporting Period:0    January 02, 2024
+Name: date, dtype: object to 28    January 31, 2024
+Name: date, dtype: object
+
+    Budget Summary: 
+    Total Budget: 5000
+    Total Expenses: -5572.66
+    Budget Remaining: -572.66
+    % of Budget Spent: -111.45
+
+    Spending by category:
+    category
+Commute                     -200.50
+Entertainment               -370.50
+Food                        -466.25
+Learning                    -544.96
+Office Expenses             -590.80
+Professional Development    -399.00
+Software                   -1620.65
+Team Building               -300.00
+Travel                     -1000.00
+Utilities                    -80.00
+Name: amount, dtype: float64
+
+    Top 5 expenses:
+              date                             description  amount                  category
+18  2024-01-21           Adobe Creative Suite - yearly -599.88                  Software
+23  2024-01-26  Flight tickets for upcoming conference -550.00                    Travel
+9   2024-01-12         Hotel for conference - 2 nights -450.00                    Travel
+26  2024-01-29          Coursera subscription - yearly -399.00                  Learning
+8   2024-01-11        Industry conference registration -399.00  Professional Development
+
+    Budget Status: Over budget
+
+    Please review the attached pie chart for a visual breakdown of spending by category.
+
+    This report was generated automatically. If you have any questions or notice any discrepancies,
+    please contact the finance department.
+
+    
